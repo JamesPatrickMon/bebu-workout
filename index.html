@@ -1,26 +1,32 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bebu's Weekly Workout</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap');
-  .wrap {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
     min-height: 100vh;
     background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 40%, #f3e5f5 100%);
     padding: 2rem 1rem;
     font-family: 'DM Sans', sans-serif;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
   }
-  .wrap::before {
+  body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     width: 320px; height: 320px;
     border-radius: 50%;
     background: rgba(255,182,193,0.35);
     top: -80px; right: -80px;
     pointer-events: none;
   }
-  .wrap::after {
+  body::after {
     content: '';
-    position: absolute;
+    position: fixed;
     width: 200px; height: 200px;
     border-radius: 50%;
     background: rgba(243,229,245,0.5);
@@ -30,6 +36,7 @@
   .card {
     background: rgba(255,255,255,0.72);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.9);
     border-radius: 20px;
     padding: 1.5rem 1.25rem;
@@ -96,9 +103,8 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    cursor: pointer;
-    transition: transform 0.15s, box-shadow 0.15s;
     text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
   }
   .num:hover {
     transform: scale(1.12);
@@ -136,7 +142,6 @@
     border: none;
     border-radius: 99px;
     padding: 2px 8px;
-    cursor: pointer;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     white-space: nowrap;
@@ -151,11 +156,10 @@
     color: #ad6b8a;
     text-align: center;
     font-style: italic;
-    line-height: 1.6;
   }
 </style>
-
-<div class="wrap">
+</head>
+<body>
   <div class="card">
     <div class="deco">♡</div>
     <p class="routine-title">Bebu's Weekly Workout</p>
@@ -171,7 +175,7 @@
         <p class="ex-detail">Upper back on couch/bench — bodyweight to start</p>
       </div>
       <div class="right-col">
-        <span class="sets-label">3 sets × 10 reps</span>
+        <span class="sets-label">3 sets × 8 reps</span>
         <a class="ts-btn" href="https://www.youtube.com/watch?v=QPTcLlOWSl4" target="_blank">▶ Watch</a>
       </div>
     </div>
@@ -183,7 +187,7 @@
         <p class="ex-detail">Hinge first, neutral back — then transition to squat</p>
       </div>
       <div class="right-col">
-        <span class="sets-label">3 sets × 10 reps</span>
+        <span class="sets-label">3 sets × 8 reps</span>
         <a class="ts-btn" href="https://www.youtube.com/watch?v=-sq5i4-nVm0&t=1170s" target="_blank">▶ 19:30</a>
       </div>
     </div>
@@ -195,7 +199,7 @@
         <p class="ex-detail">Staggered stance, hinge + row — keep back flat</p>
       </div>
       <div class="right-col">
-        <span class="sets-label">3 sets × 10 reps</span>
+        <span class="sets-label">3 sets × 8 reps</span>
         <a class="ts-btn" href="https://www.youtube.com/watch?v=-sq5i4-nVm0&t=840s" target="_blank">▶ 14:00</a>
       </div>
     </div>
@@ -207,7 +211,7 @@
         <p class="ex-detail">Seated or standing — control the descent</p>
       </div>
       <div class="right-col">
-        <span class="sets-label">3 sets × 10 reps</span>
+        <span class="sets-label">3 sets × 8 reps</span>
         <a class="ts-btn" href="https://www.youtube.com/watch?v=B-aVuyhvLHU&t=19s" target="_blank">▶ Watch</a>
       </div>
     </div>
@@ -219,7 +223,7 @@
         <p class="ex-detail">Or knee push-ups if no dumbbells available</p>
       </div>
       <div class="right-col">
-        <span class="sets-label">3 sets × 10 reps</span>
+        <span class="sets-label">3 sets × 8 reps</span>
         <a class="ts-btn" href="https://www.youtube.com/watch?v=T0Y3OBF1bNI" target="_blank">▶ Watch</a>
       </div>
     </div>
@@ -248,7 +252,7 @@
       </div>
     </div>
 
-    <hr class="divider">
-    <p class="footer">Increase to 12 reps when 10 feels easy.<br>Once 12 feels easy, increase weight and return to 10 reps ♡</p>
+    <p class="footer">Increase weight when 3 sets feels easy ♡</p>
   </div>
-</div>
+</body>
+</html>
